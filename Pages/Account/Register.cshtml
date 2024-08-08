@@ -1,11 +1,11 @@
 ﻿@page
-@model RegisterModel
+@model CookieAuthentication.Pages.Account.RegisterModel
 @{
     ViewData["Title"] = "Register";
 }
- 
+
 <h1>@ViewData["Title"]</h1>
- 
+
 <div class="row">
     <div class="col-md-4">
         <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
@@ -31,7 +31,7 @@
         </form>
     </div>
 </div>
- 
+
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
